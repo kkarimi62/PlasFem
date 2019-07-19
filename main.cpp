@@ -3,7 +3,7 @@
 #include <omp.h>
 
 using std::cout;
-
+//--- driver program 
 int main()
 {
 	double start_time = omp_get_wtime();
