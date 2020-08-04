@@ -1,21 +1,33 @@
-# Makefile for compiling cpp files in PlasFem
-#
+#--- Makefile for compiling cpp files in PlasFem
+#--- openMP with its default compiler
+
+
+#--- compiler/linker settings
+#--- specify flags and libraries needed for your compiler
+
 CC=c++
 
-INC_DIR = .
+INC_DIR = /home/kkarimi/opt/eigen-eigen-07105f7124f9 
 LIB_DIR = .
-EXE = hellomake
+BOOST_INC = /home/kkarimi/opt/boost_1_59_0 
 
-CFLAGS=-I$(INC_DIR)
+CFLAGS=-I$(INC_DIR) -I$(BOOST_INC) -fopenmp -O2 -std=c++11 -static-libstdc++ -w
 
-DEPS = map.h
-OBJ = map.o
+
+DEPS = *.h
+OBJ = *.o
+EXE = fem_run
+
+#--- Compilation rules
 
 %.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
+#--- Link target
+
 $(EXE): $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
+
 
 clean:
 	rm -f *.o $(EXE)  
