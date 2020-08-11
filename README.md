@@ -23,4 +23,4 @@ in the library. To delete the executables, run \
 \
 make clean_all \
 \
-. 
+.. 
