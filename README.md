@@ -15,11 +15,11 @@ A simpe MakeFile is provided. You just need to run \
 \
 make \
 \
-. To clean old object files (\*.o) and dependencies (\*.d), simply run \
+in the package library. To clean old object files (\*.o) and dependencies (\*.d), simply run \
 \
 make clean \
 \
-. To delete the executables, run \
+in the library. To delete the executables, run \
 \
 make clean_all \
 \
