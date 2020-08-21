@@ -7,30 +7,39 @@
 
 CC=c++
 
-INC_DIR = /home/kkarimi/opt/eigen-eigen-07105f7124f9 
+INC_DIR = /home/kamran.karimi1/Project/opt/eigen-eigen-323c052e1731
 LIB_DIR = .
-BOOST_INC = /home/kkarimi/opt/boost_1_59_0 
+BOOST_INC = /home/kamran.karimi1/Project/opt/boost_1_59_0
 
-CFLAGS=-I$(INC_DIR) -I$(BOOST_INC) -fopenmp -O2 -std=c++11 -static-libstdc++ -w
+CFLAGS= -fopenmp -I$(INC_DIR) -I$(BOOST_INC) -O2 -std=c++11 -static-libstdc++ -w
 
-
-DEPS = *.h
-OBJ = *.o
+#--- define the executable file
 EXE = fem_run
+
+#--- List of all source files
+SRC = $(wildcard *.cpp)
+
+#--- Object files defined from source files
+OBJ = $(patsubst %.cpp, %.o, $(SRC))
+
+#--- List of dependencies defined from list of object files
+#DEPS := $(OBJ:.o=.d)
+#-include $(DEPS)
+
+#$(info VAR="$(OBJ)")
 
 #--- Compilation rules
 
-%.o: %.cpp $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+#%.o: %.cpp $(DEPS)
+%.o: %.cpp 
+	@echo Compiling $<...
+	$(CC) $(CFLAGS) -c $< -o $@ 
 
 #--- Link target
-
 $(EXE): $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS)
-
+	$(CC) $^ -o $@  $(CFLAGS)
 
 clean:
 	rm -f *.o $(EXE)  
-
 
 #---  

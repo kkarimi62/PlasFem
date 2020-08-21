@@ -13,7 +13,7 @@ msd( 0 ) //, randOBJ( new RandNumbers( 1.0, 1000 ) )
 //kount( 0 ), init( 0 ), ds( 0.0 ), duration( 0 )
 {}
 //------------------------------------------------------
-Tracer::~Tracer()
+Tracer::~Tracer() //--- the destructors
 {
 
 //	memObj->Delete2ndMat( lohi, 2 );

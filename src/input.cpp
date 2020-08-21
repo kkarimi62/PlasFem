@@ -15,7 +15,7 @@ using std::cout;
 #define MAXARGLEN 100
 #define MAXDUMP 100
 
-// constructor
+// the constructor
 Input::Input( Fem *fem ):
 narg( 0 )
 {
