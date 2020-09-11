@@ -27,9 +27,5 @@ make clean_all \
 .
 
 # Overview
-The package contains 3 independent types of programs: (i) A program that derives a density matrix from a real earthquake catalogue (Chad's format)
-   for an inhomogeneous background-earthquake distribution, (ii) the actual
-   ETAS catalogue generator that can use a previously generated density matrix
-   OR generate random (homogeneous) background earthquakes, and (iii) a tool to
-   clean up the generated catalogues regarding detector blindness after very
-   strong earthquakes.
+The package solves elastic and/or plastic problems by discretizing the domain using two-dimensional linear triangular elements in space. The time
+integration is carried out through an explicit scheme besed on the velocity Verlet integrator.
