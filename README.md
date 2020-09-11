@@ -28,4 +28,4 @@ make clean_all \
 
 # Overview
 The package solves elastic and/or plastic problems by discretizing the domain using two-dimensional linear triangular elements in space. The time
-integration is carried out through an explicit scheme besed on the velocity Verlet integrator.
+integration is carried out through an explicit scheme based on the velocity Verlet integrator.
