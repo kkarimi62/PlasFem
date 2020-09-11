@@ -4,6 +4,7 @@ Finite element package for modeling amorphous plasticity
 ## Table of Contents
 * [Author Information](#author-information)
 * [Compilation](#compilation)
+* Overview
 
 ## Author Information
 * Developer: Kamran Karimi
@@ -25,4 +26,4 @@ make clean_all \
 \
 .
 
-# overview
+# Overview
