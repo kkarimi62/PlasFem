@@ -16,7 +16,7 @@ A simpe MakeFile is provided. You just need to run \
 \
 make \
 \
-in the package library. To clean old object files (\*.o) and dependencies (\*.d), simply run \
+in the package library and the executable file "fem_run" will be created in src. To clean old object files (\*.o) and dependencies (\*.d), simply run \
 \
 make clean \
 \
@@ -25,5 +25,7 @@ in the library. To delete the executables, run \
 make clean_all \
 \
 .
+
+**_NOTE:_**  The note content.
 
 # Overview
