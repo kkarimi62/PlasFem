@@ -7,6 +7,7 @@
 
 CC=c++
 
+#--- include libraries: to be set by the user
 INC_DIR = /home/kamran.karimi1/Project/opt/eigen-eigen-323c052e1731
 LIB_DIR = .
 BOOST_INC = /home/kamran.karimi1/Project/opt/boost_1_59_0

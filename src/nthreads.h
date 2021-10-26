@@ -1,1 +1,1 @@
-#define nThreads 8 //kam
+#define nThreads 8

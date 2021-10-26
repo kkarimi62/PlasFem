@@ -1,0 +1,24 @@
+read_data	data.txt
+mat_prop	moduli.txt
+thermo_style	100	step	lohi	sigma	p	n
+timestep	0.01
+
+fix_deform	0.0001 #--- shearing rate
+#--- relaxation timescales:	drag	taup	taud	critDrag
+fix_viscous	1.9098593171	0.636619772368	160.0	0.0
+
+dump	0	100	stress.xyz	sxx	syy	sxy
+dump	1	100000	gauss.xyz	xg	yg
+dump	2	100000	volume.xyz	vol
+dump	3	100	activity.xyz	act
+dump	4	100	yfunc.xyz		yf
+
+pure_shear	0 	#diagonal(0) axial(1)
+ncrit	1 	#--- von-misess(0), mohr-columb no dilatancy(1), mohr-columbdilatancy(2)
+nweak	0 	#--- no weakening(0), accumulatedweakening(1),non-accumulative weakening(2)
+nlaps	1 	#plastic(0), maxwell visco-elastic(1), viscousnewtonian(2),zero stress(3), damage(4)
+nrecv	0 	#recovery criterion: time(0), stran(1), stres(2), damage(3)
+
+
+run	1000000
+restart	1000000
