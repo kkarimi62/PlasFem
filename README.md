@@ -13,18 +13,18 @@ Finite element package for modeling amorphous plasticity
 * Email: [kamran.karimi1@ucalgary.ca](mailto:lunde@adobe.com?subject=[GitHub]%20Source%20Han%20Sans)
 
 ## Compilation
-A simpe MakeFile is provided. You just need to run \
+A simpe MakeFile is provided. You just need to run
 ```
 make
 ```
-in the package library and the executable file "fem_run" will be created in ./src. To clean old object files (\*.o) and dependencies (\*.d), simply run \
-\
-make clean \
-\
-in the library. To delete the executables, run \
-\
-make clean_all \
-\
+in the package library and the executable file "fem_run" will be created in ./src. To clean old object files (\*.o) and dependencies (\*.d), simply run
+```
+make clean
+```
+in the library. To delete the executables, run
+```
+make clean_all
+```
 .
 
 # Overview
