@@ -5,7 +5,7 @@ Finite element package for modeling amorphous plasticity
 * [Author Information](#author-information)
 * [Compilation](#compilation)
 * [Overview](#overview)
-* [Run with Docker](#Docker)
+* [Run using Docker](#Docker)
 
 ## Author Information
 * Developer: Kamran Karimi
