@@ -14,9 +14,9 @@ Finite element package for modeling amorphous plasticity
 
 ## Compilation
 A simpe MakeFile is provided. You just need to run \
-\
-make \
-\
+```
+make
+```
 in the package library and the executable file "fem_run" will be created in ./src. To clean old object files (\*.o) and dependencies (\*.d), simply run \
 \
 make clean \
