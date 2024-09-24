@@ -10,6 +10,10 @@ MatProp::MatProp( char* dataFile, Fem *femObj ):
 MAXSTRLEN( 1000 ), MAXARG( 100 )
 {
 	infile = fopen( dataFile, "r" );
+    if (infile == nullptr) {
+        // Throw an error if file does not exist
+        throw std::runtime_error("Error: File '" + std::string(dataFile) + "' does not exist or cannot be opened.");
+    }
 	line = new char[ MAXSTRLEN ]; // command string
 	args = new char*[ MAXARG ]; // string for a parsed command
 	for( int i = 0; i < MAXARG; i++ ) 
