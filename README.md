@@ -5,6 +5,7 @@ Finite element package for modeling amorphous plasticity
 * [Author Information](#author-information)
 * [Compilation](#compilation)
 * [Overview](#overview)
+* [Run with Docker](#Docker)
 
 ## Author Information
 * Developer: Kamran Karimi
@@ -29,3 +30,5 @@ make clean_all \
 # Overview
 The package solves elastic and/or plastic problems by discretizing the domain using two-dimensional linear triangular elements in space. The time
 integration is carried out through an explicit scheme based on the velocity Verlet integrator.
+
+# Docker
