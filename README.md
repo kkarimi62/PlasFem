@@ -32,10 +32,6 @@ The package solves elastic and/or plastic problems by discretizing the domain us
 integration is carried out through an explicit scheme based on the velocity Verlet integrator.
 
 # Docker
-
-
-### 1. Pull the Docker Image
-
 You can pull the docker image using the following command:
 
 ```bash
@@ -43,3 +39,6 @@ docker pull kkarimi62/fem_run:v3
 ```
 
 After pulling the image, make sure you can run the application in a Docker container:
+```
+docker run kkarimi62/fem_run:v3
+```
