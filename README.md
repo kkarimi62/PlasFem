@@ -38,7 +38,7 @@ integration is carried out through an explicit scheme based on the velocity Verl
 
 You can pull the docker image using the following command:
 
-```bash
+´´´
 docker pull kkarimi62/fem_run:v3
 ´´´
 
